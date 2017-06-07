@@ -1,0 +1,39 @@
+
+.search-bar{
+  margin: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+.search-bar input {
+  width: 75%;
+
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.video item img {
+  max-width: 64px;
+}
+.video-detail .details {
+  margin-top: 10px;
+  width: 100% !important;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+
+}
+.list-group-item {
+  cursor: pointer;
+}
+.list-group-item:hover {
+  background-color: #eee;
+}
+.list-group{
+  float: right !important;
+}
+.video-detail{
+  width: 65% !important;
+}
