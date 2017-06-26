@@ -23,7 +23,6 @@ class SearchBar extends Component {
         <nav className="navbar navbar-fixed-top">
           <div className="container-fixed">
             <div className="navbar-header">
-              <img src={youtube} alt="logo" className="navbar-brand"/>
             </div>
             <input
             placeholder="Search Here..."
