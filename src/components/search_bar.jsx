@@ -15,10 +15,19 @@ class SearchBar extends Component {
     return (
       <div className="search-bar">
         <h3>Search Here</h3>
-        <input
-          value={this.state.term}
-          onChange={event => this.onInputChange(event.target.value)} />
         <hr />
+        <nav className="navbar navbar-fixed-top">
+          <div className="container-fixed">
+            <div className="navbar-header">
+              <a className="navbar-brand" href="#">Youtube Search</a>
+            </div>
+            <input
+            placeholder="Search Here..."
+              value={this.state.term}
+              onChange={event => this.onInputChange(event.target.value)} />
+              <span class="glyphicon glyphicon-search"></span>
+          </div>
+        </nav>
       </div>
     );
   }

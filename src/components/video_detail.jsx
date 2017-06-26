@@ -1,8 +1,8 @@
 import React from 'react';
-
+// import {ProgressBar} from 'react-bootstrap'
 const VideoDetails = ({ video }) => {
   if (!video) {
-    return <div><h1>Loading....</h1></div>
+    return <div className="loader"></div>
   }
   const videoId = video.id.videoId;
   const url = `https://www.youtube.com/embed/${videoId}`;
@@ -13,7 +13,9 @@ const VideoDetails = ({ video }) => {
       </div>
       <div className="details ">
         <h3>{video.snippet.title}</h3>
-        <div>{video.snippet.description}</div>
+        <div>{video.snippet.description}
+          <p>{video.snippet.publishedAt}</p>
+        </div>
       </div>
     </div>
   );
