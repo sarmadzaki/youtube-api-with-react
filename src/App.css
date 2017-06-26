@@ -19,8 +19,7 @@ body{
   font-weight: bold;
 }
 .search-bar input {
-  width: 75%;
-
+     width: 75%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -43,7 +42,7 @@ body{
   cursor: pointer;
 }
 .list-group-item:hover {
-  background-color: #eee;
+  background-color: lightcyan;
 }
 .list-group{
   float: right !important;
