@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import '../App.css';
-import youtube from '../youtube.png'
-const image = "${process.env.PUBLIC_URL}/youtube.png";
 
 class SearchBar extends Component {
   constructor(props) {
@@ -9,7 +7,6 @@ class SearchBar extends Component {
     this.state = {
       term: ''
     }
-    console.log(image)
   }
   onInputChange(term) {
     this.setState({ term });

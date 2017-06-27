@@ -29,7 +29,9 @@ background: -ms-linear-gradient(45deg, rgba(46,46,46,1) 0%, rgba(176,17,23,1) 21
 background: linear-gradient(45deg, rgba(46,46,46,1) 0%, rgba(176,17,23,1) 21%, rgba(176,17,23,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2e2e', endColorstr='#b01117', GradientType=1 );
 }
-
+.media-heading:hover {
+  color: lightblue;
+}
 
 .search-bar input {
      width: 75%;
