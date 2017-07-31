@@ -16,7 +16,7 @@ class App extends Component {
       videos: [],
       selectedVideo: null
     }
-    this.videoSearch('surfboards');
+    this.videoSearch('alan walker faded');
   }
   videoSearch(term) {
     YTSearch({ key: API_KEY, term: term }, (videos) => {

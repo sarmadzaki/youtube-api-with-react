@@ -74,6 +74,7 @@ body{
   height: 120px;
   -webkit-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;
+  
 }
 
 @-webkit-keyframes spin {
