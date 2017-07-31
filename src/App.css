@@ -2,7 +2,6 @@ body{
   margin: 0 auto !important;
   padding: 0 auto !important;
  
-  color: white !important;
 }
 .search-bar{
   margin: 30px;
@@ -19,16 +18,7 @@ body{
   font-size: 17px;
   font-weight: bold;
 }
-div{
-background: rgba(46,46,46,1);
-background: -moz-linear-gradient(45deg, rgba(46,46,46,1) 0%, rgba(176,17,23,1) 21%, rgba(176,17,23,1) 100%);
-background: -webkit-gradient(45deg, right top, color-stop(0%, rgba(46,46,46,1)), color-stop(21%, rgba(176,17,23,1)), color-stop(100%, rgba(176,17,23,1)));
-background: -webkit-linear-gradient(45deg, rgba(46,46,46,1) 0%, rgba(176,17,23,1) 21%, rgba(176,17,23,1) 100%);
-background: -o-linear-gradient(45deg, rgba(46,46,46,1) 0%, rgba(176,17,23,1) 21%, rgba(176,17,23,1) 100%);
-background: -ms-linear-gradient(45deg, rgba(46,46,46,1) 0%, rgba(176,17,23,1) 21%, rgba(176,17,23,1) 100%);
-background: linear-gradient(45deg, rgba(46,46,46,1) 0%, rgba(176,17,23,1) 21%, rgba(176,17,23,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2e2e', endColorstr='#b01117', GradientType=1 );
-}
+
 .media-heading:hover {
   color: lightblue;
 }
@@ -49,6 +39,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2e2e', end
 .video item img {
   max-width: 64px;
 }
+.view{
+  overflow: scroll;
+  width: 100% !important;
+}
 .video-detail .details {
   margin-top: 10px;
   width: 100% !important;
@@ -59,6 +53,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2e2e', end
 }
 .list-group-item {
   cursor: pointer;
+  background-color: skyblue;
 }
 .list-group-item:hover {
   background-color: lightcyan;
@@ -97,3 +92,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2e2e', end
 .navbar {
   background-color: #a8c9ff !important;
 }
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+     
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }
+
+/*
+    Multicoloured Hover Variations
+*/
+ 
+ #social-fb:hover {
+     color: #3B5998;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+ }
+ #social-gp:hover {
+     color: #d34836;
+ }
+ #social-em:hover {
+     color: #f39c12;
+ }

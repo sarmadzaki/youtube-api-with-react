@@ -5,6 +5,7 @@ import SearchBar from './components/search_bar';
 import YTSearch from 'youtube-api-search';
 import VideoList from './components/video_list'
 import VideoDetails from './components/video_detail';
+import Footer from './components/footer'
 const API_KEY = 'AIzaSyAxTpJOj5D23e4uEAcn5hkC6pOV2tQUv9c';
 
 class App extends Component {
@@ -35,7 +36,7 @@ class App extends Component {
         <VideoList
           videos={this.state.videos}
           onVideoSelect={selectedVideo => this.setState({ selectedVideo })} />
-       
+       <Footer />
       </div>
     );
   }
