@@ -67,13 +67,6 @@ body{
 .loader {
   margin: 19%; 
   margin-left: 20% !important;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 1s linear infinite;
-  animation: spin 1s linear infinite;
   
 }
 

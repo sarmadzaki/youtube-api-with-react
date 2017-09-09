@@ -1,8 +1,9 @@
 import React from 'react';
 // import {ProgressBar} from 'react-bootstrap'
+import CircularProgress from 'material-ui/CircularProgress';
 const VideoDetails = ({ video }) => {
   if (!video) {
-    return <div className="loader"></div>
+    return     <CircularProgress className="loader" size={60} thickness={7} />
   }
   const videoId = video.id.videoId;
   const url = `https://www.youtube.com/embed/${videoId}`;

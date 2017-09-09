@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../App.css';
+import SearchBar from 'material-ui-search-bar'
 
-class SearchBar extends Component {
+class Search extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,21 +15,15 @@ class SearchBar extends Component {
   }
   render() {
     return (
-      <div className="search-bar">
-        <h3>Search Here</h3>
-        <hr />
-        <nav className="navbar navbar-fixed-top">
-          <div className="container-fixed">
-            <div className="navbar-header">
-            </div>
-            <input
-            placeholder="Search Here..."
-              value={this.state.term}
-              onChange={event => this.onInputChange(event.target.value)} />
-          </div>
-        </nav>
+      <div>
+        <SearchBar
+          onChange={(event) => this.onInputChange(event)}
+          style={{
+            margin: '7',
+            maxWidth: 800}}
+    />
       </div>
     );
   }
 }
-export default SearchBar;
+export default Search;

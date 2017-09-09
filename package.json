@@ -6,6 +6,8 @@
     "bootstrap": "^3.3.7",
     "loadash": "0.0.1",
     "lodash": "^4.17.4",
+    "material-ui": "^0.19.1",
+    "material-ui-search-bar": "^0.4.0",
     "react": "^15.5.4",
     "react-bootstrap": "^0.31.0",
     "react-bootstrap-table": "^3.3.7",

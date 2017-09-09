@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import _ from 'lodash'
 import './App.css';
-import SearchBar from './components/search_bar';
+import Search from './components/search_bar';
 import YTSearch from 'youtube-api-search';
 import VideoList from './components/video_list'
 import VideoDetails from './components/video_detail';
 import Footer from './components/footer'
+import AppBar from 'material-ui/AppBar';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 const API_KEY = 'AIzaSyAxTpJOj5D23e4uEAcn5hkC6pOV2tQUv9c';
 
 class App extends Component {
@@ -30,14 +32,20 @@ class App extends Component {
   render() {
     const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 300);
     return (
+      <MuiThemeProvider>
       <div>
-        <SearchBar onSearchTermChange={videoSearch} />
+        <AppBar
+    title="Title"
+    iconClassNameRight="muidocs-icon-navigation-expand-more"
+  >
+        <Search onSearchTermChange={videoSearch} />
+  </AppBar>
         <VideoDetails video={this.state.selectedVideo} />
         <VideoList
           videos={this.state.videos}
           onVideoSelect={selectedVideo => this.setState({ selectedVideo })} />
-       <Footer />
       </div>
+      </MuiThemeProvider>
     );
   }
 }
