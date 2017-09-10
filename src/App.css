@@ -6,6 +6,13 @@ body{
   padding: 0 auto !important;
  
 }
+.muidocs-icon-custom-github:before {
+    content: "\e625";
+}
+.button {
+  color: black !important;
+  margin-right: 50% !important;
+}
 .search-bar{
   margin: 30px;
   text-align: center;
