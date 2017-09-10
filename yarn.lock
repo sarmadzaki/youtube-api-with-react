@@ -4020,6 +4020,10 @@ md5.js@^1.3.4:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
+mdbootstrap@^4.4.1:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/mdbootstrap/-/mdbootstrap-4.4.1.tgz#27fc90b8e3a6436c3df64f3c77c2b00668b58c1a"
+
 media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"

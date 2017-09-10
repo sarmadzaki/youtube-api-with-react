@@ -1,3 +1,6 @@
+.appbar {
+  background-color: red !important;
+}
 body{
   margin: 0 auto !important;
   padding: 0 auto !important;

@@ -7,9 +7,9 @@ import VideoList from './components/video_list'
 import VideoDetails from './components/video_detail';
 import Footer from './components/footer'
 import AppBar from 'material-ui/AppBar';
+import './App.css'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 const API_KEY = 'AIzaSyAxTpJOj5D23e4uEAcn5hkC6pOV2tQUv9c';
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -30,16 +30,20 @@ class App extends Component {
     });
   }
   render() {
-    const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 300);
+   const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 300);
     return (
       <MuiThemeProvider>
       <div>
         <AppBar
-    title="Title"
-    iconClassNameRight="muidocs-icon-navigation-expand-more"
+          className="appbar"
+          title="Sam Youtube Player"
+          iconClassNameRight="muidocs-icon-navigation-expand-more"
   >
         <Search onSearchTermChange={videoSearch} />
   </AppBar>
+  <div>
+<br />
+  </div>
         <VideoDetails video={this.state.selectedVideo} />
         <VideoList
           videos={this.state.videos}

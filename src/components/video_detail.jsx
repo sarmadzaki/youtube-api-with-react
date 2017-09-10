@@ -3,7 +3,7 @@ import React from 'react';
 import CircularProgress from 'material-ui/CircularProgress';
 const VideoDetails = ({ video }) => {
   if (!video) {
-    return     <CircularProgress className="loader" size={60} thickness={7} />
+    return     <CircularProgress className="loader" size={100} thickness={10} />
   }
   const videoId = video.id.videoId;
   const url = `https://www.youtube.com/embed/${videoId}`;
