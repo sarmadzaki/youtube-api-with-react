@@ -5,13 +5,12 @@ import Search from './components/search_bar';
 import YTSearch from 'youtube-api-search';
 import VideoList from './components/video_list'
 import VideoDetails from './components/video_detail';
-import Footer from './components/footer'
 import AppBar from 'material-ui/AppBar';
 import './App.css'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import FlatButton from 'material-ui/FlatButton';
 import FontIcon from 'material-ui/FontIcon';
-import IconButton from 'material-ui/IconButton';
+import image from './youtube.png'
 const API_KEY = 'AIzaSyAxTpJOj5D23e4uEAcn5hkC6pOV2tQUv9c';
 class App extends Component {
   constructor(props) {
@@ -25,7 +24,7 @@ class App extends Component {
   }
   videoSearch(term) {
     YTSearch({ key: API_KEY, term: term }, (videos) => {
-      console.log(videos);
+      // console.log(videos);
       this.setState({
         videos: videos,
         selectedVideo: videos[0]
@@ -33,6 +32,9 @@ class App extends Component {
     });
   }
   render() {
+    const stylesImg = {
+      float: "left !important"
+    }
    const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 300);
     return (
       <MuiThemeProvider>
@@ -41,7 +43,7 @@ class App extends Component {
           className="appbar"
           title="Sam Youtube Player"
           iconClassNameRight="muidocs-icon-navigation-expand-more"
-  >
+  ><img src={ image} style={stylesImg} height="70px" />
         <Search onSearchTermChange={videoSearch} />
   </AppBar>
   <div>
@@ -62,7 +64,7 @@ showMenuIconButton={false}>
       label="GitHub Link"
       className="button"
       secondary={true}
-      icon={<FontIcon ClassName="muidocs-icon-custom-github" />}
+      icon={<FontIcon className="muidocs-icon-custom-github" />}
     />       <FlatButton
       href="https://facebook.com/sir.mad"
       target="_blank"

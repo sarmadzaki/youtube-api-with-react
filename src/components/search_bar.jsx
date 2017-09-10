@@ -19,7 +19,7 @@ class Search extends Component {
         <SearchBar
           onChange={(event) => this.onInputChange(event)}
           style={{
-            margin: '7',
+            margin: '7px',
             maxWidth: 800}}
     />
       </div>
