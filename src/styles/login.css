@@ -1,0 +1,11 @@
+.login {
+    margin-left: 40%;
+    border: 1 px solid black;
+}
+.appbar {
+    background-color: red !important;
+  }
+.error {
+    color: red;
+    font-size: 12px;
+}
