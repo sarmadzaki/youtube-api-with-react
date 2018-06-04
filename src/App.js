@@ -50,12 +50,14 @@ class App extends Component {
       <MuiThemeProvider>
         <div>
           <Drawer open={this.state.open}>
-          <AppBar className="appbar" title="Youtube Player" showMenuIconButton={false}  />
+          <AppBar className="appbar" title="Youtube Player" showMenuIconButton={true}
+                   onLeftIconButtonTouchTap={ () => this.handleToggle() }
+                   />
             <MenuItem>Login</MenuItem>
           </Drawer>
           <AppBar
             className="appbar"
-            onClick={() => this.handleToggle()}
+            onLeftIconButtonTouchTap={() => this.handleToggle() }
             title="Youtube Player"
             iconClassNameRight="muidocs-icon-navigation-expand-more">
             <img src={image} style={stylesImg} height="70px" />
@@ -72,7 +74,7 @@ class App extends Component {
           <AppBar
             className="appbar"
 
-            showMenuIconButton={true}>
+            showMenuIconButton={false}>
             <FlatButton
               href="https://github.com/sarmadzaki/youtube-api-with-react"
               target="_blank"
